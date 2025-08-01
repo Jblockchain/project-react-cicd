@@ -1,0 +1,13 @@
+name: Greeting # Workflow
+on: push # Trigger the workflow on push events
+jobs:
+   greet:  #here greet is the name of the job
+      runs-on: ubuntu-latest 
+      steps:
+         - name: Greeting Step
+           run: echo "Hello, World! This is a greeting from GitHub Actions."
+         - name: Another Step
+           run: echo "This is another step in the job."
+         - name: Final Step
+           run: echo "Job completed successfully!"
+      
