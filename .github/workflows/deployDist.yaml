@@ -11,7 +11,7 @@ jobs:
          - name: Another Step
            run: |
              echo "cloning repo"
-             echo "${{toJson(github)}}""
+             echo "${{toJson(github)}}"
              git clone https://github.com/${{github.repository}}.git
              echo "Repository cloned successfully."
 
