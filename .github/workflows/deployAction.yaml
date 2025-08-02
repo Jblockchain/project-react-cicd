@@ -1,4 +1,4 @@
-name: deployDist # Workflow
+name: deployAction # Workflow
 on: [push,workflow_dispatch] # Trigger the workflow on push events
 jobs:
    test:  #here greet is the name of the job
