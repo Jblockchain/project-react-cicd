@@ -1,4 +1,4 @@
-name: Buildanddeploy # Workflow
+name: Buildaeploy # Workflow
 on: [push,workflow_dispatch] # Trigger the workflow on push events
 jobs:
    test:  #here test is the name of the job
@@ -35,7 +35,7 @@ jobs:
         - name: Build Application
           run: npm run build
         - name: upload dist artifact
-          user: actions/upload-artifact@v4
+          uses: actions/upload-artifact@v4
           with:
             name: dist-files
             path: dist
